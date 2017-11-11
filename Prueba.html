@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<title> Pablo Vial </title>
+	<style>
+		h1 {/* comments */
+				color: blue;
+				font-size: 45px;}
+		p {color: black;}
+
+		img{object-position: left;
+			display: block;}
+
+		body {background-image: url(http://static.panoramio.com/photos/large/86424158.jpg);}
+		#paragraph1{
+			/* Aplica solo al objeto con id = paragraph1 */
+			font-size: 60px;}
+		h1.prueba{
+			/* Aplica solo a los h1 de la clase prueba */
+			background-color: red;}
+		div p {
+			/* Aplica solo a los p dentro de divs */
+			color: black;}
+	</style>	
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" datatoggle="collapse"
+			data-target="#navbar" aria-expanded="false" ariacontrols="navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Awesome Project</a>
+		</div>
+		<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#overview">Overview</a></li>
+				<li><a href="#Cord">Cordillera</a></li>
+			</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</nav>
+
+<!--- Header -->
+<header>
+	<div class="container">
+	<div class="jumbotron">
+		<h1>A great title!</h1>
+		<p class="lead">Some description.
+		</p>
+		<p>
+		<a class="btn btn-lg btn-success" href="#"
+		role="button">See more</a>
+		</p>
+	</div>
+	</div>
+</header>
+
+<!--- Botones -->
+<p id="myParagraph">
+	Veamos que pasa
+	<button type="button" onclick="document.getElementById('myParagraph').innerHTML ='Hello World'"> Click </button>
+</p>
+
+<p id="prettyParagraph">
+	Veamos que pasa de nuevo
+</p>
+<button type="button" onclick="applyStyling()">Make it pretty!</button>
+<script>
+	function applyStyling() {
+		var paragraph = document.getElementById("prettyParagraph");
+		paragraph.style.color = "green";
+		paragraph.style.fontSize = "29px";
+		paragraph.style.fontWeight = "700";
+	}
+</script>
+
+<!--- carrusel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<img src="https://web.stanford.edu/~siegelr/chile/lacampana2010/IMG_4425%20pablo%20and%20soledad%205-23-2010%20la%20campana,%20chile.jpg" alt = "Prueba" height="100" width="150">
+		</div>
+		<div class="item">
+			<img src="https://web.stanford.edu/~siegelr/chile/lacampana2010/IMG_4425%20pablo%20and%20soledad%205-23-2010%20la%20campana,%20chile.jpg" alt = "Prueba" height="100" width="150">
+		</div>
+	</div>
+</div>
+
+<ul>
+	<li>
+	<div class = "row">
+		<p id="paragraph1"> Presentacion de contenidos </p>
+		<ol style="list-style-type: square;">
+			<li> Noticia 1 </li>
+			<li> Noticia 2 </li>
+			<li> Noticia 3 </li>
+		</ol>
+	</div> 
+	</li>
+
+	<li>
+	<div class = "row">
+		<div class = "col-md-4"> <h1 class="prueba"> Titular de la noticia </h1> 
+		<scrip align="left"> Desarrollo de la noticia. Un <span style="color:red"> monton de informacion relevante </span> y otros detalles menores </scrip></div>
+		<div class = "col-md-4"> <h1 class="prueba"> Titular de la noticia </h1> 
+		<scrip align="left"> Desarrollo de la noticia. Un <span style="color:red"> monton de informacion relevante </span> y otros detalles menores </scrip></div>
+		<div class = "col-md-4"> <h1 class="prueba"> Titular de la noticia </h1> 
+		<scrip align="left"> Desarrollo de la noticia. Un <span style="color:red"> monton de informacion relevante </span> y otros detalles menores </scrip></div>
+		
+		</iframe>
+	</div>
+	</li>
+
+	<li>
+	<div class = "row">
+		<h1 class="prueba"> Segunda noticia</h1>
+		<scrip> Segunda noticia desarrollo </scrip>
+		<img src="https://web.stanford.edu/~siegelr/chile/lacampana2010/IMG_4425%20pablo%20and%20soledad%205-23-2010%20la%20campana,%20chile.jpg" alt = "Prueba" height="420" width="630">
+		<footer> Cierre. Referencias y fuentes </footer>
+		<a href="https://www.google.com" target = "_blank"> Aqui link </a>
+	</div>
+	<li>
+	<div class = "row">
+		<h1 id="Cord"> Cordillera</h1>
+		<img src="Cerro_Tronador_-_cordillera_de_los_Andes.JPG" ork 4\Pictures\HW4 Q2 a.1.png" alt = "Prueba" height="420" width="700">
+	</div>
+	</li>
+
+<!-- Mnesaje en la pagina -->
+<script>
+	alert("Hey, guys!");
+</script>
+
+
+<iframe width="700" height="400" src="https://www.youtube.com/embed/pWI28dqugi0" frameborder="0" gesture="media" allowfullscreen>
+
+</body>
+</html>
